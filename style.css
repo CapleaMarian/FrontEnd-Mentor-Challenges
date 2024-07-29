@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+}
+
+.card{
+    width: 300px;
+    background-color: rgb(24, 89, 89);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px;
+    
+}
+
+.card:nth-child(1){
+    background-color: rgb(173, 125, 5);
+}
+
+.card:nth-child(2){
+    background-color:rgb(26, 137, 137);
+}
+
+.card:nth-child(3){
+    background-color: rgb(24, 89, 89);
+}
+
+h2 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    font-style: normal;
+    margin: 20px 0px;
+}
+
+p {
+    font-family: "Big Shoulders Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.call-to-action{
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    margin-top: 100px;
+    border: 2px solid;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.call-to-action:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 2px solid;
+    border-radius: 20px;
+}
+
+.attribution{
+    background-image: radial-gradient( rgb(227, 136, 38),rgb(0, 66, 65) );
+    font-size: large;
+    width: 60%;
+    height: 10%;
+    margin: auto;
+    padding: 20px;
+}
+
+.attribution a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px){
+    .content{
+        flex-direction: column;
+    }
+}
